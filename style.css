@@ -1,0 +1,650 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh !important;
+  width: 100vw;
+  font-family: "Dosis", sans-serif;
+}
+
+.header {
+  background-image: url("img/wallpaper2you_110548.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  padding: 0 !important;
+}
+
+.header .art .one,
+.header .art .two,
+.header .art .three,
+.header .art .four,
+.header .art .five {
+  height: 110px;
+  width: 80px;
+  position: absolute;
+}
+
+.header .art .six,
+.header .art .seven,
+.header .art .eight,
+.header .art .nine,
+.header .art .ten {
+  height: 150px;
+  width: 110px;
+  position: absolute;
+}
+
+.header .art .eleven,
+.header .art .twelve,
+.header .art .thirteen,
+.header .art .fourteen,
+.header .art .fifteen {
+  height: 65px;
+  width: 50px;
+  position: absolute;
+}
+
+.header .art .one {
+  left: 90%;
+  top: 600px;
+}
+
+.header .art .two {
+  left: 65%;
+  top: 800px;
+}
+
+.header .art .three {
+  left: 40%;
+  top: 100px;
+}
+
+.header .art .four {
+  left: 85%;
+  top: 220px;
+}
+
+.header .art .five {
+  left: 20%;
+  top: 460px;
+}
+
+.header .art .six {
+  left: 5%;
+  top: 660px;
+}
+
+.header .art .seven {
+  left: 35%;
+  top: 555px;
+}
+
+.header .art .eight {
+  left: 65%;
+  top: 120px;
+}
+
+.header .art .nine {
+  left: 55%;
+  top: 400px;
+}
+
+.header .art .ten {
+  left: 10%;
+  top: 130px;
+}
+
+.header .art .eleven {
+  left: 25%;
+  top: 70px;
+}
+
+.header .art .twelve {
+  left: 50%;
+  top: 250px;
+}
+
+.header .art .thirteen {
+  left: 70%;
+  top: 500px;
+}
+
+.header .art .fourteen {
+  left: 80%;
+  top: 100px;
+}
+
+.header .art .fifteen {
+  left: 15%;
+  top: 600px;
+}
+
+.header h1 {
+  font-family: "Sora", sans-serif;
+  color: white;
+  margin-top: 320px;
+  margin-left: 18%;
+  font-size: 60px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.header i {
+  position: absolute;
+  bottom: 10px;
+  left: 49%;
+  color: white;
+  font-size: 30px;
+}
+
+.mainNav {
+  background-image: url("img/wallpaper2you_110548.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 60px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+
+.mainNav .first {
+  width: 250px;
+  text-align: center;
+}
+
+.mainNav .first .fa-gg-circle {
+  font-size: 30px;
+  margin-left: -10px;
+}
+
+.mainNav .first .fa-gg-circle:hover {
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+.mainNav .first h1:hover {
+  color: white;
+}
+
+.mainNav .first h1 {
+  color: #ff5328;
+  margin: 9px 20px;
+  font-family: "Gugi", cursive;
+  display: inline-block;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mainNav .navigation {
+  width: 60%;
+  margin-left: -30px;
+}
+
+.mainNav .navigation ul {
+  list-style-type: none;
+  margin: 12px 0px;
+  padding: 0;
+}
+
+.mainNav .navigation ul li {
+  color: #ff5328;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 30px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.mainNav .navigation ul li:hover {
+  color: white !important;
+  cursor: pointer;
+}
+
+.mainNav .searchBar {
+  width: 300px;
+  text-align: center;
+}
+
+.mainNav .searchBar input {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 20px;
+  margin-top: 6px;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+.mainNav .searchBar input:focus {
+  outline: none;
+}
+
+.mainNav .searchBar input::-webkit-input-placeholder {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.mainNav .searchBar input:-ms-input-placeholder {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.mainNav .searchBar input::-ms-input-placeholder {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.mainNav .searchBar input::placeholder {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.mainNav .searchBar button {
+  background-color: transparent !important;
+  padding: 2px;
+  position: absolute;
+  font-size: 15px !important;
+  margin-top: 4px;
+  margin-left: -50px;
+  height: 40px;
+  width: 40px;
+  color: white;
+  border: none;
+}
+
+.mainNav .searchBar button:hover {
+  color: white !important;
+}
+
+.mainNav .searchBar button:active,
+.mainNav .searchBar button:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.currencies {
+  margin-top: 100vh;
+  width: 100vw;
+  font-weight: 200;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(211, 207, 212, 0.205)), to(rgba(35, 29, 41, 0.623)));
+  background-image: linear-gradient(rgba(211, 207, 212, 0.205), rgba(35, 29, 41, 0.623));
+  font-family: "Roboto", sans-serif;
+  padding: 0 !important;
+}
+
+.about {
+  margin-top: 70px !important;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.199) !important;
+}
+
+.card {
+  margin: 20px !important;
+  padding: 10px !important;
+  width: 24rem;
+  height: 11rem;
+  display: inline-block !important;
+  background-color: transparent !important;
+  color: white !important;
+  border-radius: 0 !important;
+  border: none !important;
+  text-align: left;
+  font-size: 18px;
+}
+
+.card .card-body {
+  margin-left: 40px !important;
+  padding: 0 !important;
+  width: 17rem;
+  height: 9rem;
+  text-align: center;
+}
+
+.card .bold {
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 0;
+  letter-spacing: 1.5px;
+  font-family: "Sora", sans-serif;
+}
+
+.card .check {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: white !important;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.card .check:hover {
+  color: #ff5328 !important;
+  cursor: pointer;
+}
+
+.card .fa-times {
+  color: white !important;
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  cursor: pointer;
+}
+
+.card .fa-times:hover {
+  color: #ff5328 !important;
+  cursor: pointer;
+}
+
+.card button {
+  width: 120px !important;
+  background-color: white !important;
+  border: none !important;
+  border-radius: 30px !important;
+  font-size: 15px !important;
+  font-weight: 400;
+  color: #18183a;
+}
+
+.card button:hover {
+  background-color: #292b74 !important;
+  color: white !important;
+}
+
+.card .fa-check-circle {
+  color: #ff5328 !important;
+}
+
+.card .fa-check-circle:hover {
+  color: white !important;
+}
+
+.card .id {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 11px;
+}
+
+.card .rates {
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.card img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  margin-bottom: 5px;
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+
+.selected {
+  background-color: rgba(255, 255, 255, 0.199) !important;
+}
+
+.live {
+  display: none;
+}
+
+.about {
+  display: none;
+}
+
+.dialog {
+  z-index: 5;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 24, 56, 0.212)), to(rgba(30, 24, 56, 0.932)));
+  background-image: linear-gradient(rgba(30, 24, 56, 0.212), rgba(30, 24, 56, 0.932));
+  top: 0;
+}
+
+.dialog .wrap {
+  margin: 100px auto;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(24, 25, 51, 0.856);
+  background-position: top;
+  color: white;
+  padding: 30px;
+}
+
+.dialog .wrap .top {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.dialog .wrap .top:hover {
+  color: #ffee58;
+  cursor: pointer;
+}
+
+.dialog .wrap .title {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dialog .wrap .title2 {
+  margin-top: -10px;
+  font-size: 25px;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dialog .wrap .coins {
+  font-size: 24px;
+  font-weight: 200;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin-left: 30px;
+  color: #ff5328;
+}
+
+.dialog .wrap .remove {
+  color: #ff5328;
+  margin-right: 10px;
+}
+
+.dialog .wrap .remove:hover {
+  color: #ffee58;
+  cursor: pointer;
+}
+
+.dialog .wrap .coins:hover {
+  color: #ffee58;
+  cursor: pointer;
+}
+
+.loader {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -75px;
+  background-image: url("/img/download copy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.spin {
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+.searching {
+  background-color: none !important;
+  background-image: none !important;
+  position: fixed;
+  height: 100vh;
+  margin-top: 0 !important;
+  background-image: url("img/wallpaper2you_110548.jpg") !important;
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow: scroll;
+}
+
+.onlyCoins {
+  margin-top: 0px !important;
+  position: absolute;
+  top: 60px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(211, 207, 212, 0.205)), to(rgba(39, 27, 59, 0.486)));
+  background-image: linear-gradient(rgba(211, 207, 212, 0.205), rgba(39, 27, 59, 0.486));
+}
+
+.aboutPage {
+  text-align: left;
+  margin-left: 4%;
+  width: 70vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+.aboutPage img {
+  width: 300px;
+  height: 250px;
+  margin-top: 100px;
+}
+
+.aboutPage h1 {
+  font-family: "Sora", sans-serif;
+  color: white;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.aboutPage p {
+  color: white;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 680px) {
+  .one,
+  .two,
+  .three,
+  .four,
+  .five {
+    display: none;
+  }
+  .header h1 {
+    font-size: 45px;
+    margin-left: 40px;
+  }
+  .mainNav .first {
+    width: 200px !important;
+  }
+  .mainNav .first .fa-gg-circle {
+    font-size: 25px !important;
+    margin-left: -50px !important;
+  }
+  .mainNav .first h1 {
+    font-size: 25px !important;
+  }
+  .mainNav ul li {
+    color: #ff5328;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 5px !important;
+    font-weight: 100;
+    cursor: pointer;
+  }
+  .mainNav ul li:hover {
+    color: white !important;
+    cursor: pointer;
+  }
+  .mainNav .searchBar {
+    width: 150px !important;
+    margin-top: -5px !important;
+  }
+  .mainNav .searchBar input {
+    width: 100px;
+  }
+  .mainNav .searchBar button {
+    margin-left: -40px !important;
+  }
+  .mainNav .searchBar input::-webkit-input-placeholder {
+    font-size: 15px !important;
+  }
+  .mainNav .searchBar input:-ms-input-placeholder {
+    font-size: 15px !important;
+  }
+  .mainNav .searchBar input::-ms-input-placeholder {
+    font-size: 15px !important;
+  }
+  .mainNav .searchBar input::placeholder {
+    font-size: 15px !important;
+  }
+  .aboutPage {
+    width: 91vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

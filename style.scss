@@ -1,0 +1,564 @@
+@mixin bkImg {
+  background-image: url("img/wallpaper2you_110548.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+$orange: rgb(255, 83, 40);
+$yellow: rgb(255, 238, 88);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh !important;
+  width: 100vw;
+  font-family: "Dosis", sans-serif;
+}
+.header {
+  @include bkImg;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  padding: 0 !important;
+
+  .art {
+    .one,
+    .two,
+    .three,
+    .four,
+    .five {
+      height: 110px;
+      width: 80px;
+      position: absolute;
+    }
+    .six,
+    .seven,
+    .eight,
+    .nine,
+    .ten {
+      height: 150px;
+      width: 110px;
+      position: absolute;
+    }
+    .eleven,
+    .twelve,
+    .thirteen,
+    .fourteen,
+    .fifteen {
+      height: 65px;
+      width: 50px;
+      position: absolute;
+    }
+    .one {
+      left: 90%;
+      top: 600px;
+    }
+    .two {
+      left: 65%;
+      top: 800px;
+    }
+    .three {
+      left: 40%;
+      top: 100px;
+    }
+    .four {
+      left: 85%;
+      top: 220px;
+    }
+    .five {
+      left: 20%;
+      top: 460px;
+    }
+    .six {
+      left: 5%;
+      top: 660px;
+    }
+    .seven {
+      left: 35%;
+      top: 555px;
+    }
+    .eight {
+      left: 65%;
+      top: 120px;
+    }
+    .nine {
+      left: 55%;
+      top: 400px;
+    }
+    .ten {
+      left: 10%;
+      top: 130px;
+    }
+    .eleven {
+      left: 25%;
+      top: 70px;
+    }
+    .twelve {
+      left: 50%;
+      top: 250px;
+    }
+    .thirteen {
+      left: 70%;
+      top: 500px;
+    }
+    .fourteen {
+      left: 80%;
+      top: 100px;
+    }
+    .fifteen {
+      left: 15%;
+      top: 600px;
+    }
+  }
+  h1 {
+    font-family: "Sora", sans-serif;
+    color: white;
+    margin-top: 320px;
+    margin-left: 18%;
+    font-size: 60px;
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+
+  i {
+    position: absolute;
+    bottom: 10px;
+    left: 49%;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+  }
+}
+
+.mainNav {
+  @include bkImg;
+  width: 100%;
+  height: 60px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+
+  .first {
+    width: 250px;
+    text-align: center;
+    .fa-gg-circle {
+      font-size: 30px;
+      margin-left: -10px;
+    }
+    .fa-gg-circle:hover {
+      animation: spin 2s linear infinite;
+    }
+    h1:hover {
+      color: white;
+    }
+    h1 {
+      color: $orange;
+      margin: 9px 20px;
+      font-family: "Gugi", cursive;
+      display: inline-block;
+      font-size: 30px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  .navigation {
+    width: 60%;
+    margin-left: -30px;
+
+    ul {
+      list-style-type: none;
+      margin: 12px 0px;
+      padding: 0;
+
+      li {
+        color: $orange;
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 30px;
+        font-weight: 200;
+        cursor: pointer;
+      }
+      li:hover {
+        color: white !important;
+        cursor: pointer;
+      }
+    }
+  }
+  .searchBar {
+    width: 300px;
+    text-align: center;
+
+    input {
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      padding: 5px 20px;
+      margin-top: 6px;
+      margin-left: 10px;
+      border-radius: 20px;
+    }
+    input:focus {
+      outline: none;
+    }
+    input::placeholder {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      font-weight: 100;
+    }
+    button {
+      background-color: transparent !important;
+      padding: 2px;
+      position: absolute;
+      font-size: 15px !important;
+      margin-top: 4px;
+      margin-left: -50px;
+      height: 40px;
+      width: 40px;
+      color: white;
+      border: none;
+    }
+    button:hover {
+      color: white !important;
+    }
+    button:active,
+    button:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+.currencies {
+  margin-top: 100vh;
+  width: 100vw;
+  font-weight: 200;
+  text-align: center;
+  background-image: linear-gradient(
+    rgba(211, 207, 212, 0.205),
+    rgba(35, 29, 41, 0.623)
+  );
+  font-family: "Roboto", sans-serif;
+  padding: 0 !important;
+}
+.about {
+  margin-top: 70px !important;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.199) !important;
+}
+.card {
+  margin: 20px !important;
+  padding: 10px !important;
+  width: 24rem;
+  height: 11rem;
+  display: inline-block !important;
+  background-color: transparent !important;
+  color: white !important;
+  border-radius: 0 !important;
+  border: none !important;
+  text-align: left;
+  font-size: 18px;
+
+  .card-body {
+    margin-left: 40px !important;
+    padding: 0 !important;
+    width: 17rem;
+    height: 9rem;
+    text-align: center;
+  }
+
+  .bold {
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 0;
+    letter-spacing: 1.5px;
+    font-family: "Sora", sans-serif;
+  }
+  .check {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color: white !important;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .check:hover {
+    color: $orange !important;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: white !important;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    top: 23px;
+    cursor: pointer;
+  }
+  .fa-times:hover {
+    color: $orange !important;
+    cursor: pointer;
+  }
+  button {
+    width: 120px !important;
+    background-color: white !important;
+    border: none !important;
+    border-radius: 30px !important;
+    font-size: 15px !important;
+    font-weight: 400;
+    color: rgb(24, 24, 58);
+  }
+  button:hover {
+    background-color: rgb(41, 43, 116) !important;
+    color: white !important;
+  }
+  .fa-check-circle {
+    color: $orange !important;
+  }
+  .fa-check-circle:hover {
+    color: white !important;
+  }
+  .id {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 11px;
+  }
+  .rates {
+    font-size: 17px;
+    font-weight: 100;
+  }
+  img {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    margin-bottom: 5px;
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+  }
+}
+.selected {
+  background-color: rgba(255, 255, 255, 0.199) !important;
+}
+
+.live {
+  display: none;
+}
+
+.about {
+  display: none;
+}
+
+.dialog {
+  z-index: 5;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-image: linear-gradient(
+    rgba(30, 24, 56, 0.212),
+    rgba(30, 24, 56, 0.932)
+  );
+  top: 0;
+
+  .wrap {
+    margin: 100px auto;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(24, 25, 51, 0.856);
+    background-position: top;
+    color: white;
+    padding: 30px;
+
+    .top {
+      cursor: pointer;
+      font-size: 30px;
+    }
+    .top:hover {
+      color: $yellow;
+      cursor: pointer;
+    }
+    .title {
+      font-size: 30px;
+      font-weight: 400;
+      text-align: center;
+      margin-top: 15px;
+    }
+    .title2 {
+      margin-top: -10px;
+      font-size: 25px;
+      font-weight: 100;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .coins {
+      font-size: 24px;
+      font-weight: 200;
+      display: inline-block;
+      width: 100%;
+      text-align: left;
+      margin-left: 30px;
+      color: $orange;
+    }
+    .remove {
+      color: $orange;
+      margin-right: 10px;
+    }
+    .remove:hover {
+      color: $yellow;
+      cursor: pointer;
+    }
+    .coins:hover {
+      color: $yellow;
+      cursor: pointer;
+    }
+  }
+}
+
+.loader {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -75px;
+  background-image: url("/img/download\ copy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+.searching {
+  background-color: none !important;
+  background-image: none !important;
+  position: fixed;
+  height: 100vh;
+  margin-top: 0 !important;
+  background-image: url("img/wallpaper2you_110548.jpg") !important;
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow: scroll;
+}
+
+.onlyCoins {
+  margin-top: 0px !important;
+  position: absolute;
+  top: 60px;
+  background-image: linear-gradient(
+    rgba(211, 207, 212, 0.205),
+    rgba(39, 27, 59, 0.486)
+  );
+}
+
+.aboutPage {
+  text-align: left;
+  margin-left: 4%;
+  width: 70vw;
+  height: 100vh;
+  overflow: auto;
+
+  img {
+    width: 300px;
+    height: 250px;
+    margin-top: 100px;
+  }
+  h1 {
+    font-family: "Sora", sans-serif;
+    color: white;
+    margin-top: 50px;
+
+    font-size: 30px;
+    font-weight: 300;
+    text-align: left;
+  }
+  p {
+    color: white;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .one,
+  .two,
+  .three,
+  .four,
+  .five {
+    display: none;
+  }
+  .header {
+    h1 {
+      font-size: 45px;
+      margin-left: 40px;
+    }
+  }
+  .mainNav {
+    .first {
+      width: 200px !important;
+      .fa-gg-circle {
+        font-size: 25px !important;
+        margin-left: -50px !important;
+      }
+      h1 {
+        font-size: 25px !important;
+      }
+    }
+
+    ul {
+      li {
+        color: $orange;
+        display: inline-block;
+        font-size: 15px;
+        margin-left: 5px !important;
+        font-weight: 100;
+        cursor: pointer;
+      }
+      li:hover {
+        color: white !important;
+        cursor: pointer;
+      }
+    }
+
+    .searchBar {
+      width: 150px !important;
+      margin-top: -5px !important;
+      input {
+        width: 100px;
+      }
+      button {
+        margin-left: -40px !important;
+      }
+
+      input::placeholder {
+        font-size: 15px !important;
+      }
+    }
+  }
+  .aboutPage {
+    width: 91vw;
+  }
+}
